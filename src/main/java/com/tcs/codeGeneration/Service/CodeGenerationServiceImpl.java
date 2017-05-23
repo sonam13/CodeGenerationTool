@@ -18,7 +18,7 @@ public class CodeGenerationServiceImpl implements CodeGenerationService{
 @Override
 public Object message(Request request) {
 	Object object;
-		if(("REST").equals(request.getServiceType()))
+		if("REST".equals(request.getServiceType()))
 			 object = restTemplate.postForObject(restCodeUrl,request, Object.class );
 		else
 			 object = restTemplate.postForObject(soapCodeUrl,request, Object.class );	
