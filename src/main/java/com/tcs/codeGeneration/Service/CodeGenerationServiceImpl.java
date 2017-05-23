@@ -16,8 +16,8 @@ public class CodeGenerationServiceImpl implements CodeGenerationService{
 	@Value("${soapCodeUrl}")
 	private String soapCodeUrl;
 public Object message(Request request) {
-	Object object = null;
-		if(request.getServiceType().equals("REST"))
+	Object object;
+		if(("REST").equals(request.getServiceType()))
 			 object = restTemplate.postForObject(restCodeUrl,request, Object.class );
 		else
 			 object = restTemplate.postForObject(soapCodeUrl,request, Object.class );	
