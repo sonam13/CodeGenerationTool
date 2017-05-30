@@ -15,6 +15,8 @@ public class CodeGenerationController {
 	@RequestMapping(value = "/hello", method = RequestMethod.POST)
 	public @ResponseBody Object getClientes(@RequestBody Request request) {
 		//hii
-		return service.message(request);
+		//return service.message(request);
+		
+		return "hello working";
 	}
 }
