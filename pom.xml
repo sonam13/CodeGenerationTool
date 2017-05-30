@@ -6,7 +6,7 @@
 	<groupId>com.tcs</groupId>
 	<artifactId>CodeGenerationTool</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<packaging>war</packaging>
+	<packaging>jar</packaging>
 
 	<name>CodeGenerationTool</name>
 	<description>generate source code</description>
@@ -66,12 +66,12 @@
 
 
 	<build>
-		<!--<plugins>
+		<plugins>
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
 			</plugin>
-		</plugins> -->
+		</plugins> 
 	</build>
 
 
