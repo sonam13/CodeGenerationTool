@@ -12,7 +12,7 @@ import com.tcs.codeGeneration.Service.CodeGenerationService;
 @Controller
 public class CodeGenerationController {
 	@Autowired CodeGenerationService service;
-	@RequestMapping(value = "/hello", method = RequestMethod.POST)
+	@RequestMapping(value = "", method = RequestMethod.POST)
 	public @ResponseBody Object getClientes(@RequestBody Request request) {
 		//hii
 		
